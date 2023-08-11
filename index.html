@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/play.css" />
+    <script src="./js/index.js"></script>
+    <title>汀汀十二岁生日快乐！</title>
+
+</head>
+
+
+<body>
+    <div>
+        <div class="shell">
+
+            <div class="image" style="background-image: url('./imag/1.jpg');"></div>
+            <div class="heading">
+                <h1>今天汀汀下凡的第十二年啦</h1>
+            </div>
+            <div class="text">
+                <h1>飘落的樱花作为你生日的贺礼</h1>
+            </div>
+
+            <div class="image" style="background-image: url('./imag/2.jpg');"></div>
+            <div class="heading">
+                <h1>舞台上你曼妙的舞姿尽显青春的朝气</h1>
+            </div>
+            <div class="text">
+                <h1>今天，你是最闪亮的星！</h1>
+            </div>
+
+            <div class="image" style="background-image: url('./imag/3.jpg');"></div>
+            <div class="heading">
+                <h1>在这个特殊的日子里</h1>
+            </div>
+            <div class="text">
+                <h1>让我们献上最热烈的祝福！</h1>
+            </div>
+
+            <div class="image" style="background-image: url('./imag/4.jpg');"></div>
+            <div class="heading">
+                <a href="./birthday-master/index.html" class="herf">
+                    <h1>王汀玉，十二岁生日快乐!</h1>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer_list">
+                    <div class="footer_btn">
+                        <a href="#">
+                            <img class="last" src="./music/p/Last.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="play" src="./music/p/play.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="paused" src="./music/p/paused.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="next" src="./music/p/next.png" alt="">
+                        </a>
+                        <input class="volume" type="range" max="1" min="0" step="0.01">
+                    </div>
+                    <div class="musicname"></div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-music">
+            <audio class="audio" autoplay></audio>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------- -->
+    <script>
+        $('input').on('change', function() {
+            $('body').toggleClass('background');
+        });
+    </script>
+    <script src="./js/fail.js"></script>
+</body>
+
+</html>
